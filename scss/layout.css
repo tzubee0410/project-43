@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .login-content {
+  width: 50%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px #f6f6f6;
+          box-shadow: 0px 0px 20px #f6f6f6;
+  padding: 10px;
+}
+
+.wrapper .login-content .img {
+  width: 50%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1595236332861-7553ef284422?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ") no-repeat;
+  background-size: cover;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.wrapper .login-content .login-form {
+  width: 50%;
+  padding: 40px;
+}
+/*# sourceMappingURL=layout.css.map */
