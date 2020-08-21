@@ -13,7 +13,7 @@ function login(acc, paw) {
     const xhr = new XMLHttpRequest();
     xhr.open('post', url, true);
     xhr.setRequestHeader("Content-type", "application/json");
-    xhr.send(JSON.stringify(user));
+    xhr.send(user);
     console.log(user);
     //xhr.send(user);
     xhr.onload = () => {
