@@ -1,6 +1,7 @@
 //AJAX POST .xmlhttprequest
 const submit = document.querySelector('.loginbtn');
 
+
 function login() {
 
     let acc = document.querySelector('#Account').value;
@@ -10,7 +11,7 @@ function login() {
     user.email = acc;
     user.password = paw;
 
-    let errtext = document.querySelector('.err');
+    //let errtext = document.querySelector('.err');
 
     // API
     const url = 'https://hexschool-tutorial.herokuapp.com/api/signin';
@@ -30,75 +31,47 @@ function login() {
     }
 }
 
-
-
-
-
-
-// function login(acc, paw) {
-
-//     const url = 'https://hexschool-tutorial.herokuapp.com/api/signin';
-//     const xhr = new XMLHttpRequest()
-//     let data = `email=${acc}&password=${paw}`
-//     let errtext = document.querySelector('.err');
-//     xhr.open('post', url)
-//     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-//     xhr.send(data)
-//     xhr.onload = () => {
-//         let str = JSON.parse(xhr.responseText)
-//         if (str.success == true) {
-//             errtext.innerHTML += `${str.message}` // 自行加上 HTML 內容
-//         } else {
-//             errtext.innerHTML += `${str.message}` // 自行加上 HTML 內容
-//         }
-//     }
-
-// }
-
-
-
-
-
-
-
-
-//事件按鈕
-//submit.addEventListener('click', login);
-
 submit.addEventListener('click', () => {
-    let acc = document.getElementById('Account').value;
-    let paw = document.getElementById('Password').value;
-    login(acc, paw);
-    // sweetAlert('Hello World!');
+    //let acc = document.getElementById('Account').value;
+    //let paw = document.getElementById('Password').value;
+    login();
 })
 
 
 
 
 
-
-// function signin() {
-//     const api = "https://hexschool-tutorial.herokuapp.com/api/signin";
-//     const signEmail = document.getElementById('Account').value;
-//     const signPassword = document.getElementById('Password').value;
-//     let account = {};
-//     account.email = signEmail;
-//     account.password = signPassword;
-//     let errtext = document.querySelector('.err');
-//     const xhr = new XMLHttpRequest();
-//     xhr.open('post', api, true);
-//     xhr.setRequestHeader('Content-type', 'application/json');
-//     data = JSON.stringify(account);
-//     xhr.send(data);
-//     xhr.onload = () => {
-//         let str = JSON.parse(xhr.responseText)
-//         if (str.success == true) {
-//             errtext.innerHTML += `${str.message}` // 自行加上 HTML 內容
-//         } else {
-//             errtext.innerHTML += `${str.message}` // 自行加上 HTML 內容
-//         }
-//     }
-// };
+const signupBtn = document.querySelector('.singbtn');
 
 
-// submit.addEventListener('click', signin);
+let singup = () =>{
+    // api
+    const singupUrl = 'https://hexschool-tutorial.herokuapp.com/api/signup';
+    let singupAccount = document.querySelector('#singupAccount').value;
+    let singupPassword = document.querySelector('#singupPassword').value;
+    data = {singupAccount, singupPassword};
+    
+    axios.post(singupUrl,data).then(res=>{
+        console.log(data);
+        console.log(res);
+        if(res.data.success){
+            sweetAlert(`${res.data.message}`);
+        }else{
+            sweetAlert(`${res.data.message}`);
+        }
+        
+    })
+    .catch(err => {
+        console.log('錯誤');
+    })
+
+
+}
+
+
+
+
+signupBtn.addEventListener('click',()=>{
+    singup();
+})
+

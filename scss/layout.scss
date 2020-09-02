@@ -1,4 +1,4 @@
-.wrapper{
+.wrapperLogin{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +17,43 @@
             background: url('https://images.unsplash.com/photo-1595236332861-7553ef284422?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ') no-repeat;
             background-size: cover;
             font-size: 3rem;
+            color: #ffffff;
+            padding: 30px;
+            font-weight: 600;
+        }
+        .login-form{
+            width: 50%;
+            padding:40px;
+            .err{
+                color: red;
+            }
+
+        }
+    }
+}
+
+
+//註冊
+.wrapperSingup{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .login-content{
+        width: 50%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 20px #f6f6f6;
+        padding: 10px;
+        .img{
+            width: 50%;
+            height: 330px;
+            background: url('https://images.unsplash.com/photo-1596301866888-2b291d481e53?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ')  no-repeat;
+            background-size: cover;
+            font-size: 3rem;
+            font-weight: 600;
             color: #ffffff;
             padding: 30px;
             

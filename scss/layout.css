@@ -1,4 +1,4 @@
-.wrapper {
+.wrapperLogin {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +13,7 @@
           align-items: center;
 }
 
-.wrapper .login-content {
+.wrapperLogin .login-content {
   width: 50%;
   margin: 50px auto;
   display: -webkit-box;
@@ -27,7 +27,7 @@
   padding: 10px;
 }
 
-.wrapper .login-content .img {
+.wrapperLogin .login-content .img {
   width: 50%;
   height: 330px;
   background: url("https://images.unsplash.com/photo-1595236332861-7553ef284422?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ") no-repeat;
@@ -35,14 +35,64 @@
   font-size: 3rem;
   color: #ffffff;
   padding: 30px;
+  font-weight: 600;
 }
 
-.wrapper .login-content .login-form {
+.wrapperLogin .login-content .login-form {
   width: 50%;
   padding: 40px;
 }
 
-.wrapper .login-content .login-form .err {
+.wrapperLogin .login-content .login-form .err {
+  color: red;
+}
+
+.wrapperSingup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperSingup .login-content {
+  width: 50%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px #f6f6f6;
+          box-shadow: 0px 0px 20px #f6f6f6;
+  padding: 10px;
+}
+
+.wrapperSingup .login-content .img {
+  width: 50%;
+  height: 330px;
+  background: url("https://images.unsplash.com/photo-1596301866888-2b291d481e53?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ") no-repeat;
+  background-size: cover;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.wrapperSingup .login-content .login-form {
+  width: 50%;
+  padding: 40px;
+}
+
+.wrapperSingup .login-content .login-form .err {
   color: red;
 }
 /*# sourceMappingURL=layout.css.map */

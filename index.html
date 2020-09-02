@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapperLogin">
         <div class="login-content">
             <div class="img">Login</div>
             <div class="login-form ">
@@ -32,8 +33,31 @@
             </div>
         </div>
     </div>
+
+    <!-- 註冊 -->
+    <div class="wrapperSingup">
+        <div class="login-content">
+            <div class="img">SIGN UP</div>
+            <div class="login-form ">
+                <form>
+                    <div class="form-group">
+                        <label for="Account">Account</label>
+                        <input type="text" class="form-control" id="singupAccount" aria-describedby="emailHelp"
+                            placeholder="Account">
+                        <small class="form-text text-muted err"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="singupPassword" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-outline-primary singbtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/login.js"></script>
- 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
